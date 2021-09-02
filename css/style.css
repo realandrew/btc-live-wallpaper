@@ -1,0 +1,72 @@
+* {
+    --background-fallback: hsla(333, 100%, 53%, 1);
+    --background-gradient: linear-gradient(90deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
+    --before-fallback: hsla(111, 100%, 53%, 1);
+    --before-gradient: linear-gradient(90deg, hsla(111, 100%, 53%, 1) 0%, hsla(11, 94%, 57%, 1) 100%);
+    --before-opacity: 0;
+}
+
+body {
+    background: var(--background-fallback);
+    background: var(--background-gradient);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body:before {
+    border-radius: inherit;
+    background: var(--before-fallback);
+    background: var(--before-gradient);
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: var(--before-opacity);
+    z-index: -100;
+    transition: opacity 5s ease-in-out;
+}
+
+#center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 17% auto 10% auto;
+    width: fit-content;
+}
+
+#btcusd-banner {
+    margin: 0 auto;
+    font-size: 120px;
+    font-weight: bold;
+    color: seashell;
+    font-family: 'Dosis', sans-serif;
+    text-shadow: 4px 4px 2px darkslategray;
+}
+
+#refreshBar {
+    height: 5px;
+    background-color: royalblue;
+    border: none;
+    width: 100%;
+    align-self: flex-start;
+    margin: 5px 0;
+    transition: width 0.2s ease;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    padding: 5px 10px 30px 50px;
+    color: aliceblue;
+    opacity: 0.8;
+}
+
+footer a, footer a:visited {
+    color: aliceblue;
+}

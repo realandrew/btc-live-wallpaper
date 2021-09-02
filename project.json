@@ -1,0 +1,45 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "A wallpaper that shows the current bitcoin price. At the moment it's very basic and updates the USD price every 5 seconds (configurable) from the CoinGecko API. I plan to add more features, currencies and configuration settings, and will likely open source it as well (it's an HTML5 so easy to contribute to unlike a Wallpaper Engine scene).",
+	"file" : "test.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"darkmode" : 
+			{
+				"index" : 1,
+				"order" : 101,
+				"text" : "Dark Mode",
+				"type" : "bool",
+				"value" : false
+			},
+			"refreshinterval" : 
+			{
+				"fraction" : false,
+				"index" : 0,
+				"max" : 300,
+				"min" : 5,
+				"order" : 100,
+				"text" : "Refresh Interval (seconds)",
+				"type" : "slider",
+				"value" : 5
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Technology" ],
+	"title" : "Bitcoin Live Price Wallpaper",
+	"type" : "web",
+	"version" : 11,
+	"visibility" : "public",
+	"workshopid" : "2573360835",
+	"workshopurl" : "steam://url/CommunityFilePage/2573360835"
+}
